@@ -16,9 +16,9 @@ $$S_{q,d} = \sum_{i \in [|q|]} \max_{j \in [|d|]} E_{q_i}^{\top} E_{d_j}$$
 
 <br/>
 
-> *HNSW 를* **호출하는 것** *과,* $P(l) = \exp(-l \cdot \ln m_L)$ *의 layer assignment 가 어떻게* **multi-layer small-world graph** *를 형성해 greedy search 에서 $O(\log N)$ 을 보장하는지,* **$M$ neighbors 와 $ef$ candidate list** *가 recall-latency 의 어느 축을 움직이는지 증명할 수 있는 것은 다르다.*
+> *HNSW 를* **호출하는 것** *과,* $P(l) = \exp(-l \cdot \ln m_L)$ *의 layer assignment 가 어떻게* **multi-layer small-world graph** *를 형성해 greedy search 에서* $O(\log N)$ *을 보장하는지,* **$M$ neighbors 와 $ef$ candidate list** *가 recall-latency 의 어느 축을 움직이는지 증명할 수 있는 것은 다르다.*
 >
-> *Product Quantization 을 **사용하는 것** 과, 그것이 vector 를 $m$ 개 subvector 로 split 하여 $k^m$ 개 distinct codes 를*
+> *Product Quantization 을* **사용하는 것** *과, 그것이 vector 를* $m$ *개 subvector 로 split 하여* $k^m$ *개 distinct codes 를*
 >
 > $$m \cdot \log_2 k \quad \text{bits} \;\; (\text{e.g., } m = 8, k = 256 \Rightarrow 64 \text{ bits/vector})$$
 >
@@ -28,11 +28,11 @@ $$S_{q,d} = \sum_{i \in [|q|]} \max_{j \in [|d|]} E_{q_i}^{\top} E_{d_j}$$
 >
 > $$\mathrm{RRF}(d) = \sum_{r \in R} \frac{1}{k + \mathrm{rank}_r(d)}$$
 >
-> *가 단순한 voting 이 아니라 **score-free rank aggregation** 으로 BM25 와 dense 의 score scale 차이를 우회한다는 점, 그래서 hybrid retrieval 의 표준 baseline 이 되었다는 점을 알고 쓰는 것은 다르다.*
+> *가 단순한 voting 이 아니라* **score-free rank aggregation** *으로 BM25 와 dense 의 score scale 차이를 우회한다는 점, 그래서 hybrid retrieval 의 표준 baseline 이 되었다는 점을 알고 쓰는 것은 다르다.*
 >
 > *Self-RAG (Asai 2024) 의* `[Retrieve]` `[IsREL]` `[IsSUP]` `[IsUSE]` *reflection token 이 단순한 prompt engineering 이 아니라* **adaptive retrieval 과 self-evaluation 을 동일 LLM 의 special token 학습으로 통합한** *architecture 라는 점, 그리고 GraphRAG (Edge 2024) 의 Leiden community detection 이 왜 vector retrieval 만으로는 풀리지 않던 global question 의 새 frontier 가 되었는지를 알고 쓰는 것은 다르다.*
 
-<br/>
+</div>
 
 **다루는 기법 (이론 계보순)**
 
