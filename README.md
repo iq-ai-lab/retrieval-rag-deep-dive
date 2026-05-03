@@ -32,8 +32,6 @@ $$S_{q,d} = \sum_{i \in [|q|]} \max_{j \in [|d|]} E_{q_i}^{\top} E_{d_j}$$
 >
 > *Self-RAG (Asai 2024) 의* `[Retrieve]` `[IsREL]` `[IsSUP]` `[IsUSE]` *reflection token 이 단순한 prompt engineering 이 아니라* **adaptive retrieval 과 self-evaluation 을 동일 LLM 의 special token 학습으로 통합한** *architecture 라는 점, 그리고 GraphRAG (Edge 2024) 의 Leiden community detection 이 왜 vector retrieval 만으로는 풀리지 않던 global question 의 새 frontier 가 되었는지를 알고 쓰는 것은 다르다.*
 
-</div>
-
 **다루는 기법 (이론 계보순)**
 
 Robertson 1995 *BM25 / PRF* · Manning 2008 *Vector Space Model* · Karpukhin 2020 *DPR* · Reimers 2019 *SBERT* · Izacard 2022 *Contriever* · Wang 2022 *E5* · Xiong 2021 *ANCE Hard Negatives* · Khattab 2020 *ColBERT* · Santhanam 2022 *ColBERTv2 / PLAID* · Nogueira 2020 *MonoT5 Reranker* · Indyk & Motwani 1998 *LSH* · Jégou 2011 *Product Quantization* · Malkov & Yashunin 2018 *HNSW* · Johnson 2019 *FAISS* · Guo 2020 *ScaNN* · Lewis 2020 *RAG* · Guu 2020 *REALM* · Borgeaud 2022 *RETRO* · Izacard 2022 *Atlas* · Izacard 2021 *FiD* · Asai 2024 *Self-RAG* · Yan 2024 *CRAG* · Cormack 2009 *RRF* · Formal 2021 *SPLADE* · Sun 2023 *RankGPT* · Edge 2024 *GraphRAG* · Faysse 2024 *ColPali*
